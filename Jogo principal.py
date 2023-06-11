@@ -1,6 +1,6 @@
 import pygame
 import random
-from config import WIDTH, HEIGHT, INITIAL, PLAYING, END
+from Settings import *
 from init_screen import init_screen
 from game_screen import game_screen
 
@@ -8,7 +8,7 @@ pygame.init()
 pygame.mixer.init()
 
 window = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('Navinha')
+pygame.display.set_caption('Maze Runner')
 
 state = INITIAL
 while state != END:
