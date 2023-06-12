@@ -1,6 +1,6 @@
 # Game settings
 RES = WIDTH, HEIGTH = 1600, 900
-FPS = 0
+FPS = 60
 
 PLAYER_POS = 1.5, 5 #minI_map
 PLAYER_ANGLE = 0
