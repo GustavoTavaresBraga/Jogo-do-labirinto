@@ -48,9 +48,9 @@ class Player:
             self.y += dy
 
     def draw(self):
-        pygame.draw.line(self.game.screen, 'yellow', (self.x * 100, self.y * 100),
-                        (self.x * 100 + WIDTH * cos(self.angle),
-                         self.y * 100 + WIDTH * sin(self.angle)), 2)
+        # pygame.draw.line(self.game.screen, 'yellow', (self.x * 100, self.y * 100),
+        #                 (self.x * 100 + WIDTH * cos(self.angle),
+        #                  self.y * 100 + WIDTH * sin(self.angle)), 2)
         pygame.draw.circle(self.game.screen, 'green', (self.x * 100, self.y * 100), 15)
 
     def update(self):
@@ -58,7 +58,7 @@ class Player:
 
     @property
     def pos(self):
-        return self.x. self.y
+        return self.x, self.y
     
     @property
     def map_pos(self):
